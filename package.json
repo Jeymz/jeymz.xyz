@@ -1,0 +1,28 @@
+{
+  "name": "jeymz.xyz",
+  "version": "18.4.0",
+  "description": "My Resume Website Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeymz/jeymz.xyz.git"
+  },
+  "keywords": [
+    "Jeymz",
+    "Resume",
+    "Website",
+    "Node"
+  ],
+  "author": "James Simmons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jeymz/jeymz.xyz/issues"
+  },
+  "homepage": "https://github.com/Jeymz/jeymz.xyz#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
