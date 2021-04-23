@@ -1,0 +1,39 @@
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Jeymz</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="hamburger">
+        <ul class="nav navbar-nav">
+          <% if (locals.pages && locals.endpoint) { %>
+            <% for (let i = 0; i < pages.length; i += 1) { %>
+              <li class="<% if (endpoint === pages[i].endpoint){ %>active<% } %>"><a href="<%= pages[i].endpoint %>"><%= pages[i].title %></a></li>
+            <% } %>
+          <% } else { %>
+            <% if (locals.endpoint) { %>
+              <li class="<% if (endpoint === '/') { %>active<% } %>"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+              <li class="<% if (endpoint === '/about') { %>active<% } %>"><a href="/about">About</a></li>
+              <li class="<% if (endpoint === '/code') { %>active<% } %>"><a href="/code">Code</a></li>
+            <% } else { %>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/code">Code</a></li>
+            <% } %>
+          <% } %>
+          
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

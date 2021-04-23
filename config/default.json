@@ -1,0 +1,22 @@
+{
+    "serverConfig": {
+        "port": 3000,
+        "environment": "local-dev"
+    },
+    "websiteConfig": {
+      "pages": [
+        {
+          "title": "Home",
+          "endpoint": "/"
+        },
+        {
+          "title": "About",
+          "endpoint": "/about"
+        },
+        {
+          "title": "Code",
+          "endpoint": "/code"
+        }
+      ]
+    }
+}

@@ -4,7 +4,8 @@
   "description": "My Resume Website Server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "SET DEBUG=app,app:* && SET NODE_ENV=local-dev && nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,18 @@
   },
   "homepage": "https://github.com/Jeymz/jeymz.xyz#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "config": "^3.3.6",
+    "debug": "^4.3.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "helmet": "^4.5.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
